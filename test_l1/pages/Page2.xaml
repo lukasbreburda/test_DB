@@ -1,0 +1,41 @@
+﻿<Page x:Class="test_l1.pages.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:test_l1.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page2"   Height="600" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="407*"/>
+            <RowDefinition Height="124*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="pridat" Content="Přidat" Grid.Column="1" HorizontalAlignment="Left" Margin="295,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="138"  Height="43" Click="pridat_Click"/>
+        <Button x:Name="back" Content="Zpět" HorizontalAlignment="Left" Margin="65,10,0,0" VerticalAlignment="Top" Width="138"  Height="43" Click="back_Click"/>
+        <Button x:Name="edit" Content="Editovat" Grid.Column="1" HorizontalAlignment="Left" Margin="295,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="138"  Height="43" Click="edit_Click"/>
+        <Button x:Name="smazat" Content="Smazat" Grid.Column="1" HorizontalAlignment="Left" Margin="133,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="138"  Height="43" Click="smazat_Click"/>
+
+        <Label x:Name="nazev" Content="Název:" HorizontalAlignment="Left" Margin="206,51.2,0,0" Grid.Row="1" FontSize="18" VerticalAlignment="Top" Width="72" Height="37"/>
+        <Label x:Name="autor" Content="Autor:" HorizontalAlignment="Left" Margin="206,114.2,0,0" Grid.Row="1" FontSize="18" VerticalAlignment="Top" Width="72" Height="37"/>
+        <Label x:Name="isbnt" Content="ISBN" HorizontalAlignment="Left" Margin="206,174.2,0,0" Grid.Row="1" FontSize="18" VerticalAlignment="Top" Width="72" Height="37"/>
+        <Label x:Name="strany" Content="Počet stran:" HorizontalAlignment="Left" Margin="144,235.2,0,0" Grid.Row="1" FontSize="18" VerticalAlignment="Top" Width="134" Height="37"/>
+
+        <TextBox x:Name="naz" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="10,51.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="aut" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="10,114.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="isbn" PreviewTextInput="num" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="78,174.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="str" PreviewTextInput="num"  Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="10,231.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="132"/>
+
+        <Label x:Name="error" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="83,27,0,0" VerticalAlignment="Top" Width="119"/>
+        <TextBox x:Name="isbn2" PreviewTextInput="num" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="19,174.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="978" VerticalAlignment="Top" Width="59"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,34 @@
+﻿<Page x:Class="test_l1.pages.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:test_l1.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="Page1" Height="600" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="397*"/>
+            <ColumnDefinition Width="403*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="259*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="new" Grid.Column="0" Grid.Row="0" Content="Nová kniha" HorizontalAlignment="Left" Margin="110,19,0,0" VerticalAlignment="Top" Width="138"  Height="43" Click="new_Click"/>
+        <ListView x:Name="ListView" HorizontalAlignment="Left" Height="418" Margin="73,10.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="664" Grid.ColumnSpan="2" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="search" HorizontalAlignment="Left" Height="43" Margin="382,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="235" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Hledej" Grid.Column="1" HorizontalAlignment="Left" Margin="261.2,19,0,0" VerticalAlignment="Top" Width="111" Height="43" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="43" Margin="317,19,0,0" TextWrapping="Wrap" Text="978" VerticalAlignment="Top" Width="65"/>
+        <Label x:Name="er" Content="" HorizontalAlignment="Left" Margin="272,452.4,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="332" Height="35"/>
+
+    </Grid>
+</Page>
